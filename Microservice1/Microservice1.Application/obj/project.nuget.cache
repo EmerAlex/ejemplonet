@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "5+Z6wsRO8k7aKCz+pA9760BTq6rHTxHCnY5XevLXdMJFcTPD8UqNT/7uOJuHA0dxtzmyrn64BZ0OSk+NAl58Ag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Application\\Microservice1.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\mediatr\\7.0.0\\mediatr.7.0.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.1\\microsoft.extensions.logging.abstractions.3.0.1.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

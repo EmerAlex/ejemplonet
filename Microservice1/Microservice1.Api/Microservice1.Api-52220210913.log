@@ -1,0 +1,24 @@
+2021-09-13 17:09:09.496 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-13 17:09:09.544 -05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44382/swagger  
+2021-09-13 17:09:09.589 -05:00 [INF] Hosting environment: Development
+2021-09-13 17:09:09.590 -05:00 [INF] Content root path: C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Api
+2021-09-13 17:09:09.659 -05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44382/swagger/index.html  
+2021-09-13 17:09:09.665 -05:00 [INF] Request finished in 130.9612ms 302 
+2021-09-13 17:09:09.863 -05:00 [INF] Request finished in 204.3544ms 200 text/html; charset=utf-8
+2021-09-13 17:09:09.889 -05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44382/swagger/swagger-ui.css  
+2021-09-13 17:09:09.890 -05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44382/swagger/swagger-ui-bundle.js  
+2021-09-13 17:09:09.893 -05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44382/swagger/swagger-ui-standalone-preset.js  
+2021-09-13 17:09:09.952 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-09-13 17:09:09.952 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-09-13 17:09:09.952 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-09-13 17:09:09.955 -05:00 [INF] Request finished in 65.8822ms 200 text/css
+2021-09-13 17:09:09.956 -05:00 [INF] Request finished in 65.1719ms 200 application/javascript
+2021-09-13 17:09:09.956 -05:00 [INF] Request finished in 63.0432ms 200 application/javascript
+2021-09-13 17:09:10.257 -05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44382/swagger/v1/swagger.json  
+2021-09-13 17:09:10.300 -05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44382/swagger/favicon-32x32.png  
+2021-09-13 17:09:10.302 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-09-13 17:09:10.303 -05:00 [INF] Request finished in 3.0655ms 200 image/png
+2021-09-13 17:09:10.814 -05:00 [INF] Request finished in 557.8566ms 200 application/json; charset=utf-8
+2021-09-13 17:09:24.788 -05:00 [INF] Request starting HTTP/2.0 POST https://localhost:44382/api/Person application/json 82
+2021-09-13 17:09:24.794 -05:00 [INF] Executing endpoint 'Microservice1.Api.Controllers.PersonController.CreateUserAsync (Microservice1.Api)'
+2021-09-13 17:09:24.822 -05:00 [INF] Route matched with {action = "CreateUser", controller = "Person"}. Executing controller action with signature System.Threading.Tasks.Task CreateUserAsync(Microservice1.Application.Person.CreatePersonCommandAsync) on controller Microservice1.Api.Controllers.PersonController (Microservice1.Api).

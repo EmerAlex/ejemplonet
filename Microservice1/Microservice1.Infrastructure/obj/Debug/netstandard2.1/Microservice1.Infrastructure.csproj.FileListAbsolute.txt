@@ -1,0 +1,30 @@
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Infrastructure.deps.json
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Infrastructure.dll
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Infrastructure.pdb
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Application.dll
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Domain.dll
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Application.pdb
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Domain.pdb
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.AssemblyInfo.cs
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.csproj.CopyComplete
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.dll
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.pdb
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Infrastructure.deps.json
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Infrastructure.dll
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Infrastructure.pdb
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Application.dll
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Domain.dll
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Application.pdb
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\bin\Debug\netstandard2.1\Microservice1.Domain.pdb
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.AssemblyInfo.cs
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.csproj.CopyComplete
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.dll
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\obj\Debug\netstandard2.1\Microservice1.Infrastructure.pdb

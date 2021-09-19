@@ -1,0 +1,63 @@
+2021-09-14 09:03:54.653 -05:00 [INF] Entity Framework Core 3.1.1 initialized 'PersistenceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsHistoryTable=mySchema._MigrationHistory 
+2021-09-14 09:04:05.192 -05:00 [INF] Executed DbCommand (284ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [TutorialDB05];
+2021-09-14 09:04:05.246 -05:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [TutorialDB05] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2021-09-14 09:04:05.261 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2021-09-14 09:04:05.348 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF SCHEMA_ID(N'mySchema') IS NULL EXEC(N'CREATE SCHEMA [mySchema];');
+CREATE TABLE [mySchema].[_MigrationHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK__MigrationHistory] PRIMARY KEY ([MigrationId])
+);
+2021-09-14 09:04:05.349 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2021-09-14 09:04:05.362 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[mySchema].[_MigrationHistory]');
+2021-09-14 09:04:05.365 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [mySchema].[_MigrationHistory]
+ORDER BY [MigrationId];
+2021-09-14 09:04:05.376 -05:00 [INF] Applying migration '20200504010842_Initial Migration'.
+2021-09-14 09:04:05.398 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF SCHEMA_ID(N'mySchema') IS NULL EXEC(N'CREATE SCHEMA [mySchema];');
+2021-09-14 09:04:05.401 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [mySchema].[OperationLog] (
+    [Id] uniqueidentifier NOT NULL,
+    [LogContent] nvarchar(max) NULL,
+    [CreatedOn] datetime2 NOT NULL DEFAULT (GETDATE()),
+    [LastModifiedOn] datetime2 NOT NULL DEFAULT (GETDATE()),
+    CONSTRAINT [PK_OperationLog] PRIMARY KEY ([Id])
+);
+2021-09-14 09:04:05.405 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [mySchema].[Person] (
+    [Id] uniqueidentifier NOT NULL,
+    [FirstName] nvarchar(max) NULL,
+    [LastName] nvarchar(max) NULL,
+    [Email] nvarchar(max) NULL,
+    [DateOfBirth] datetime2 NOT NULL,
+    [CreatedOn] datetime2 NOT NULL DEFAULT (GETDATE()),
+    [LastModifiedOn] datetime2 NOT NULL DEFAULT (GETDATE()),
+    CONSTRAINT [PK_Person] PRIMARY KEY ([Id])
+);
+2021-09-14 09:04:05.407 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [mySchema].[Address] (
+    [Id] uniqueidentifier NOT NULL,
+    [Street] nvarchar(max) NULL,
+    [Number] nvarchar(max) NULL,
+    [PersonId] uniqueidentifier NOT NULL,
+    [CreatedOn] datetime2 NOT NULL DEFAULT (GETDATE()),
+    [LastModifiedOn] datetime2 NOT NULL DEFAULT (GETDATE()),
+    CONSTRAINT [PK_Address] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Address_Person_PersonId] FOREIGN KEY ([PersonId]) REFERENCES [mySchema].[Person] ([Id]) ON DELETE CASCADE
+);
+2021-09-14 09:04:05.408 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Address_PersonId] ON [mySchema].[Address] ([PersonId]);
+2021-09-14 09:04:05.410 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [mySchema].[_MigrationHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20200504010842_Initial Migration', N'3.1.1');

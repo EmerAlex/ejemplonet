@@ -1,0 +1,20 @@
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\bin\Debug\netstandard2.1\Microservice1.Domain.deps.json
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\bin\Debug\netstandard2.1\Microservice1.Domain.dll
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\bin\Debug\netstandard2.1\Microservice1.Domain.pdb
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.csproj.AssemblyReference.cache
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.AssemblyInfoInputs.cache
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.AssemblyInfo.cs
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.csproj.CoreCompileInputs.cache
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.dll
+C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.pdb
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\bin\Debug\netstandard2.1\Microservice1.Domain.deps.json
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\bin\Debug\netstandard2.1\Microservice1.Domain.dll
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\bin\Debug\netstandard2.1\Microservice1.Domain.pdb
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.csproj.AssemblyReference.cache
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.AssemblyInfoInputs.cache
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.AssemblyInfo.cs
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.csproj.CoreCompileInputs.cache
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.dll
+C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\obj\Debug\netstandard2.1\Microservice1.Domain.pdb

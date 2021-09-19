@@ -1,0 +1,122 @@
+2021-09-14 16:08:40.815 -05:00 [INF] Now listening on: https://localhost:5002
+2021-09-14 16:08:40.912 -05:00 [INF] Now listening on: http://localhost:5003
+2021-09-14 16:08:40.915 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-14 16:08:40.917 -05:00 [INF] Hosting environment: Development
+2021-09-14 16:08:40.918 -05:00 [INF] Content root path: C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Api
+2021-09-14 16:08:41.997 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger  
+2021-09-14 16:08:42.104 -05:00 [INF] Request finished in 113.9965ms 302 
+2021-09-14 16:08:42.137 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/index.html  
+2021-09-14 16:08:42.403 -05:00 [INF] Request finished in 266.039ms 200 text/html; charset=utf-8
+2021-09-14 16:08:42.816 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json  
+2021-09-14 16:08:43.452 -05:00 [INF] Request finished in 636.5104ms 200 application/json; charset=utf-8
+2021-09-14 16:09:09.058 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5002/api/Person/1  
+2021-09-14 16:09:09.066 -05:00 [INF] Executing endpoint 'Microservice1.Api.Controllers.PersonController.GetById (Microservice1.Api)'
+2021-09-14 16:09:09.119 -05:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microservice1.Application.Person.PersonDto] GetById(System.Guid) on controller Microservice1.Api.Controllers.PersonController (Microservice1.Api).
+2021-09-14 16:09:09.157 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2021-09-14 16:09:09.176 -05:00 [INF] Executed action Microservice1.Api.Controllers.PersonController.GetById (Microservice1.Api) in 46.2311ms
+2021-09-14 16:09:09.180 -05:00 [INF] Executed endpoint 'Microservice1.Api.Controllers.PersonController.GetById (Microservice1.Api)'
+2021-09-14 16:09:09.182 -05:00 [INF] Request finished in 123.7858ms 400 application/problem+json; charset=utf-8
+2021-09-14 16:10:06.693 -05:00 [INF] Request starting HTTP/2 POST https://localhost:5002/api/Person application/json 82
+2021-09-14 16:10:06.695 -05:00 [INF] Executing endpoint 'Microservice1.Api.Controllers.PersonController.CreateUserAsync (Microservice1.Api)'
+2021-09-14 16:10:06.703 -05:00 [INF] Route matched with {action = "CreateUser", controller = "Person"}. Executing controller action with signature System.Threading.Tasks.Task CreateUserAsync(Microservice1.Application.Person.CreatePersonCommandAsync) on controller Microservice1.Api.Controllers.PersonController (Microservice1.Api).
+2021-09-14 16:10:07.457 -05:00 [INF] Entity Framework Core 3.1.1 initialized 'PersistenceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsHistoryTable=mySchema._MigrationHistory 
+2021-09-14 16:10:09.055 -05:00 [ERR] An error occurred using the connection to database 'TutorialDB05' on server '(localdb)\MSSQLLocalDB'.
+2021-09-14 16:10:09.119 -05:00 [ERR] An exception occurred in the database while saving changes for context type 'Microservice1.Infrastructure.PersistenceContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "TutorialDB05" requested by the login. The login failed.
+Login failed for user 'CEIBA\emerson.quinchia'.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ClientConnectionId:fdb680c6-77ff-4ee1-a170-e72bde037a97
+Error Number:4060,State:1,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "TutorialDB05" requested by the login. The login failed.
+Login failed for user 'CEIBA\emerson.quinchia'.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ClientConnectionId:fdb680c6-77ff-4ee1-a170-e72bde037a97
+Error Number:4060,State:1,Class:11
+2021-09-14 16:10:09.725 -05:00 [ERR] Cannot open database "TutorialDB05" requested by the login. The login failed.
+Login failed for user 'CEIBA\emerson.quinchia'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "TutorialDB05" requested by the login. The login failed.
+Login failed for user 'CEIBA\emerson.quinchia'.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microservice1.Infrastructure.PersistenceContext.CommitAsync() in C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\PersistenceContext.cs:line 24
+   at Microservice1.Infrastructure.Adapters.GenericRepository`1.CommitAsync() in C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\Adapters\GenericRepository.cs:line 144
+   at Microservice1.Infrastructure.Adapters.GenericRepository`1.AddAsync(E entity) in C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Infrastructure\Adapters\GenericRepository.cs:line 89
+   at Microservice1.Domain.Services.PersonService.SavePersonAsync(Person p) in C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Domain\Services\PersonService.cs:line 41
+   at Microservice1.Application.Person.PersonCommandHandlerAsync.Handle(CreatePersonCommandAsync request, CancellationToken cancellationToken) in C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Application\Handlers\PersonCommandHandlerAsync.cs:line 22
+   at MediatR.AsyncRequestHandler`1.MediatR.IRequestHandler<TRequest,MediatR.Unit>.Handle(TRequest request, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Microservice1.Api.Controllers.PersonController.CreateUserAsync(CreatePersonCommandAsync person) in C:\Users\emerson.quinchia\Desktop\Ejemplo .Net\Microservice1\Microservice1\Microservice1\Microservice1.Api\Controllers\PersonController.cs:line 39
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ClientConnectionId:fdb680c6-77ff-4ee1-a170-e72bde037a97
+Error Number:4060,State:1,Class:11
+2021-09-14 16:10:09.776 -05:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-09-14 16:10:09.782 -05:00 [INF] Executed action Microservice1.Api.Controllers.PersonController.CreateUserAsync (Microservice1.Api) in 3073.8136ms
+2021-09-14 16:10:09.785 -05:00 [INF] Executed endpoint 'Microservice1.Api.Controllers.PersonController.CreateUserAsync (Microservice1.Api)'
+2021-09-14 16:10:09.792 -05:00 [INF] Request finished in 3100.0194ms 500 application/json; charset=utf-8
+2021-09-14 16:10:32.711 -05:00 [INF] Application is shutting down...

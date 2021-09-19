@@ -1,0 +1,39 @@
+2021-09-14 09:04:27.578 -05:00 [INF] Now listening on: https://localhost:5002
+2021-09-14 09:04:27.643 -05:00 [INF] Now listening on: http://localhost:5003
+2021-09-14 09:04:27.645 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-14 09:04:27.646 -05:00 [INF] Hosting environment: Development
+2021-09-14 09:04:27.647 -05:00 [INF] Content root path: C:\Users\wilbert.bermeo\source\repos\Microservice1\Microservice1\Microservice1.Api
+2021-09-14 09:04:28.522 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger  
+2021-09-14 09:04:28.568 -05:00 [INF] Request finished in 49.1204ms 302 
+2021-09-14 09:04:28.579 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/index.html  
+2021-09-14 09:04:28.703 -05:00 [INF] Request finished in 124.2726ms 200 text/html; charset=utf-8
+2021-09-14 09:04:28.896 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5002/swagger/v1/swagger.json  
+2021-09-14 09:04:29.360 -05:00 [INF] Request finished in 464.5171ms 200 application/json; charset=utf-8
+2021-09-14 09:04:33.658 -05:00 [INF] Request starting HTTP/2 POST https://localhost:5002/api/Person application/json 82
+2021-09-14 09:04:33.664 -05:00 [INF] Executing endpoint 'Microservice1.Api.Controllers.PersonController.CreateUserAsync (Microservice1.Api)'
+2021-09-14 09:04:33.696 -05:00 [INF] Route matched with {action = "CreateUser", controller = "Person"}. Executing controller action with signature System.Threading.Tasks.Task CreateUserAsync(Microservice1.Application.Person.CreatePersonCommandAsync) on controller Microservice1.Api.Controllers.PersonController (Microservice1.Api).
+2021-09-14 09:04:34.276 -05:00 [INF] Entity Framework Core 3.1.1 initialized 'PersistenceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsHistoryTable=mySchema._MigrationHistory 
+2021-09-14 09:04:34.828 -05:00 [INF] Executed DbCommand (66ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [mySchema].[Person] ([Id], [CreatedOn], [DateOfBirth], [Email], [FirstName], [LastName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [LastModifiedOn]
+FROM [mySchema].[Person]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;
+2021-09-14 09:04:34.883 -05:00 [INF] Executed action Microservice1.Api.Controllers.PersonController.CreateUserAsync (Microservice1.Api) in 1180.4905ms
+2021-09-14 09:04:34.887 -05:00 [INF] Executed endpoint 'Microservice1.Api.Controllers.PersonController.CreateUserAsync (Microservice1.Api)'
+2021-09-14 09:04:34.893 -05:00 [INF] Request finished in 1235.8726ms 200 
+2021-09-14 09:04:53.030 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5002/api/Person/62B7BD23-51A9-45D2-DB5D-08D9778894AA  
+2021-09-14 09:04:53.032 -05:00 [INF] Executing endpoint 'Microservice1.Api.Controllers.PersonController.GetById (Microservice1.Api)'
+2021-09-14 09:04:53.040 -05:00 [INF] Route matched with {action = "GetById", controller = "Person"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microservice1.Application.Person.PersonDto] GetById(System.Guid) on controller Microservice1.Api.Controllers.PersonController (Microservice1.Api).
+2021-09-14 09:04:53.238 -05:00 [INF] Entity Framework Core 3.1.1 initialized 'PersistenceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsHistoryTable=mySchema._MigrationHistory 
+2021-09-14 09:04:53.439 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__request_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedOn], [p].[DateOfBirth], [p].[Email], [p].[FirstName], [p].[LastModifiedOn], [p].[LastName], [a].[Id], [a].[CreatedOn], [a].[LastModifiedOn], [a].[Number], [a].[PersonId], [a].[Street]
+FROM [mySchema].[Person] AS [p]
+LEFT JOIN [mySchema].[Address] AS [a] ON [p].[Id] = [a].[PersonId]
+WHERE [p].[Id] = @__request_Id_0
+ORDER BY [p].[Id], [a].[Id]
+2021-09-14 09:04:53.484 -05:00 [INF] Executing ObjectResult, writing value of type 'Microservice1.Application.Person.PersonDto'.
+2021-09-14 09:04:53.493 -05:00 [INF] Executed action Microservice1.Api.Controllers.PersonController.GetById (Microservice1.Api) in 449.5369ms
+2021-09-14 09:04:53.501 -05:00 [INF] Executed endpoint 'Microservice1.Api.Controllers.PersonController.GetById (Microservice1.Api)'
+2021-09-14 09:04:53.504 -05:00 [INF] Request finished in 474.1212ms 200 application/json; charset=utf-8

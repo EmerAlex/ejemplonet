@@ -1,0 +1,357 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Worker.Tests\\Microservice1.Worker.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Application\\Microservice1.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Application\\Microservice1.Application.csproj",
+        "projectName": "Microservice1.Application",
+        "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Application\\Microservice1.Application.csproj",
+        "packagesPath": "C:\\Users\\emerson.quinchia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emerson.quinchia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj": {
+                "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.CodeCoverage": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj",
+        "projectName": "Microservice1.Domain",
+        "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj",
+        "packagesPath": "C:\\Users\\emerson.quinchia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emerson.quinchia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.CodeCoverage": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Infrastructure\\Microservice1.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Infrastructure\\Microservice1.Infrastructure.csproj",
+        "projectName": "Microservice1.Infrastructure",
+        "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Infrastructure\\Microservice1.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\emerson.quinchia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emerson.quinchia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Application\\Microservice1.Application.csproj": {
+                "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Application\\Microservice1.Application.csproj"
+              },
+              "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj": {
+                "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.CodeCoverage": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Worker.Tests\\Microservice1.Worker.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Worker.Tests\\Microservice1.Worker.Tests.csproj",
+        "projectName": "Microservice1.Worker.Tests",
+        "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Worker.Tests\\Microservice1.Worker.Tests.csproj",
+        "packagesPath": "C:\\Users\\emerson.quinchia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Worker.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emerson.quinchia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Application\\Microservice1.Application.csproj": {
+                "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Application\\Microservice1.Application.csproj"
+              },
+              "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj": {
+                "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj"
+              },
+              "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Infrastructure\\Microservice1.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Infrastructure\\Microservice1.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

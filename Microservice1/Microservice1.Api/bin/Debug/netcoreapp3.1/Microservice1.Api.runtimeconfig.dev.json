@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\emerson.quinchia\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\emerson.quinchia\\.nuget\\packages"
+    ]
+  }
+}

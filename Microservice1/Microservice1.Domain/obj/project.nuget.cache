@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "d5v0vMC1RcYC4yg4IPfpWWpfQJNEe/9lq2hsZ6EsA+Jj/JYc4M6/qtgM0EWPItdK2ULyAd1nKbF9BwridKzSKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emerson.quinchia\\Desktop\\Ejemplo .Net\\Microservice1\\Microservice1\\Microservice1\\Microservice1.Domain\\Microservice1.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",
+    "C:\\Users\\emerson.quinchia\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.1\\microsoft.extensions.logging.abstractions.3.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
